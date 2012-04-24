@@ -1,0 +1,20 @@
+<!--
+<form action="/article/save/" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+ -->
+<html>
+<body>
+
+	<form action="/article/save/" method="post">
+	{% csrf_token %}
+		title:{{form.title}}
+		content:{{form.content}}
+		icon:{{form.icon}}
+		category{{form.category}}
+			<input type="submit"/>
+	</form>
+
+</body>
+</html>

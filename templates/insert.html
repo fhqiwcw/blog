@@ -1,0 +1,13 @@
+<html>
+<body>
+
+	<form action="/article/add" method="post">
+	{% csrf_token %}
+		title:<input type="text" name="title" /> content:<input type="text"
+			name="content" /> icon:<input type="text" name="icon" /> category_id:<input
+			type="text" name="category_id" />
+			<input type="submit"/>
+	</form>
+
+</body>
+</html>
